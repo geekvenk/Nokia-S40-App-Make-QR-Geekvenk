@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>QRCodeGenerator</title>
+    <link href="s40-theme/css/s40-theme.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="s40-theme/js/screensize.js"></script>
+    <script type="text/javascript">		
+		function refreshPageContent() {
+				// Add code for refreshing te page here...				
+		}		
+	</script>
+	<script type="text/javascript">
+function myFunction()
+{
+var x=document.getElementById("qrcode").value;
+document.getElementById("myImage").src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl="+x;
+
+}
+
+</script>
+    <link rel="stylesheet" type="text/css" href="s40-theme/css/s40-theme_text_field_with_button.css" />
+    <link rel="stylesheet" type="text/css" href="s40-theme/css/s40-theme_button.css" />	
+    
+</head>
+
+<body>
+    <div class="ui-page">
+        <!-- header -->
+        <div class="ui-header">
+             <div class="ui-title inline" style="background:#000000;"><h2>Make QR</h2></div>
+        </div>
+        <div class="ui-content" style="text-align:center;">
+       Enter the data to convert it to QR.
+       </div>
+    </div>
+	<!-- text-field-with-button -->
+	<div align="center">
+		<div class="ui-fieldset-text-button_S40textfieldbutton">
+			<div class="header_table_S40textfieldbutton">				
+					<input id="qrcode" class="ui-text-input-with-adj-button_S40textfieldbutton"
+						name="name2" type="text" style="height: 40px; width: 187px; "/>
+				</div>
+							<button onclick="myFunction()" class="ui-fixed-40px_S40textfieldbutton" name="submit">Convert</button>
+			</div>
+		</div>
+		<script type="text/javascript">
+            var ui_text_width = document.getElementById('ui-text-width_1');
+            var x = window.innerWidth;
+            ui_text_width.style.width = x - 95 + 'px';
+      </script>
+      
+</div>
+<div align="center" style="height: 176px; "><img align="center" id="myImage" src="" width="150" height="150">
+	</img></div>
+	
+	<!-- End text-field-with-button -->
+</body>
+</html>

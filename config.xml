@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <widget xmlns="http://www.w3.org/ns/widgets" height="200" id="http://MakeQR" version="1.9.0" viewmodes="windowed fullscreen" width="200">
+    
+    <name short="Make QR">Make QR</name>    
+
+    <description>Create you own QR code.</description>    
+    <author email="support.geekvenk@outlook.com" href="">Geekvenk</author>
+    
+    <icon src="icon.png"/>
+
+    <content src="index.html"/>
+    
+    <license>GNU GPL 2013.</license>
+    
+   	<feature name="nokia://s40.nokia.com/SAWRT/2.3" required="true" />
+</widget>
